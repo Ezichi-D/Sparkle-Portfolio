@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color: white;
+}
+header{
+     height: 50%;
+    background-image: url("sparkle effect.gif");
+   
+    font-size: large;
+    text-align: center; 
+}   
+ nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+ }
+ nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+ nav ul li a{
+   color: rgb(146, 79, 208);
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ea00ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+.avatar{
+   width: 200px;
+   border-radius: 50%;
+}
+.header-text h1 strong{
+   font-size: larger;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, 
+    purple, rgb(251, 192, 255), rgb(204, 0, 255), lightpink);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header-text h2 span{
+    background: linear-gradient(to right, 
+    purple, rgb(251, 192, 255), rgb(204, 0, 255), lightpink);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main{
+   height: 50%;
+   background-color: black;
+   text-align: left;
+   font-size: large;
+
+      
+}
+#about{
+    padding: 80px 40px;
+    color: white;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutme{
+   flex-basis: 35%;
+}
+.aboutme video{
+   width: 100%;
+   border-radius: 15px;
+}
+.intro{
+   flex-basis: 60%;
+}
+
+.sub-title{
+   font-size: 40px;
+   width: auto;
+}
+
+#on{
+    padding: 0 40px;
+    color: white;
+}
+
+.layout{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 8px;
+   flex-wrap: wrap;
+}
+
+.onme{
+   flex-basis: 35%;
+}
+.onme img{
+   width: 100%;
+   border-radius: 15px;
+}
+.tab-titles{
+   flex-basis: 60%;
+   display: block;
+   margin: 0 0 8px 0;
+   text-align: left;
+   padding: 0;
+   color: white;
+}
+.tab-links{
+   margin-right: 50px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+}
+.tab-links::after{
+   content: "";
+   width: 0;
+   height: 3px;
+   background: #ea00ff;
+   position: absolute;
+   left: 0;
+   bottom: 8px;
+   transition: 0.5s;
+}
+
+
+.tab-titles .tab-links{   
+   display: inline-block;
+   margin: 0 12px;
+}
+
+.tab-links.active-link{
+   font-weight: 700;
+   border-bottom: 3px solid rgb(146, 79, 208);
+}
+
+
+/* Remove bullets and left padding for lists inside tab panels */
+.tab-contents ul li{
+   list-style: none;
+   margin: 10px 0;
+   font-size: 14px;
+}
+
+.tab-contents ul li span{
+   color: rgb(146, 79, 208);
+   font-size: 14px;
+}
+.tab-content li{
+   margin: 6px 0;
+}
+
+.tab-contents{
+   display: none;
+}
+
+.tab-contents.active-tab{
+   display: block;
+}
+
+/* ..........contact........ */
+.contact-left{
+   flex-basis: 35%;
+}
+.contact-right{
+   flex-basis: 60%;
+}
+
+/* Contact area */
+.contact-right{
+   flex-basis: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 12px;
+   box-sizing: border-box;
+}
+.contact-left{
+   margin-left: 20px;
+}
+
+.contact-right form{
+   width: 100%;
+   max-width: 480px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.contact-right input,
+.contact-right textarea,
+.contact-right button{
+   width: 100%;
+   box-sizing: border-box;
+}
+.contact-left p{
+   margin-top: 30px;
+
+}
+
+
+.social-icons{
+   margin-top: 30px;
+}
+.social-icons a{
+   text-decoration: none;
+   font-size: 30px;
+   margin-right: 15px;
+   color: bisque;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+   color: rgb(146, 79, 208);
+   transform: translateY(-5px);
+}
+.btn.btn2{
+   display: inline-block;
+   background: rgb(146, 79, 208);
+}
+.contact-right form{
+   width: 100%;
+   align-items: center;
+}
+form input, form textarea{
+   width: 100%;
+   border: 50%;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+}
+form .btn2{
+padding: 14px 60px;
+font-size: 18px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+ /* Presentable contact form tweaks (only affects form area) */
+.contact-right{
+   display: flex;
+   justify-content: center;
+   padding: 12px;
+}
+.contact-right form{
+   width: 100%;
+   max-width: 480px;
+   display: flex;
+   flex-direction: column;
+}
+.contact-right select{ /* style city select */
+   width: 100%;
+   background: #262626;
+   color: #fff;
+   padding: 12px;
+   border-radius: 6px;
+   border: 1px solid rgba(255,255,255,0.04);
+}
+.contact-right button{
+   width: auto;
+   padding: 10px 28px;
+   background: #ff004f;
+   color: #fff;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+}
+.contact-right textarea{ min-height: 200px; }
+
+/*.........Portfolio..........*/
+#portfolio{
+   padding: 30px 0;
+   margin-left: 30px;
+}
+.lead{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 50px;
+   margin-top: 50px;
+   margin-right: 50px;
+}
+.lead div{
+   background: #262626;
+   padding: 40px;
+   font-size: 25px;
+   font-weight: 1000;
+   border-radius: 10px;
+   transition: background 0.5s, transform 0.5s;
+}
+.lead div i{
+   margin-bottom: 30px;
+   font-size: 50px;
+
+}
+.lead div h3{
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+.lead div a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 12px;
+   margin-top: 20px;
+   display: inline-block;
+
+}
+.lead div:hover{
+   background: violet;
+   transform: translateY(-10px);
+}
+
+#podcast{
+   display: flex;
+   padding: 30px 0;
+   margin-left: 30px;
+}
+
+/* Make date + link sit inline and vertically centered */
+#podcast .align div p a,
+#podcast .align div p a i{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+#podcast .align div p a{
+   color: white;
+   font-size: 15px;
+   margin-left: 8px;
+   text-decoration: none;
+}
+
+#podcast .align div p small{
+   vertical-align: middle;
+}
+
+@media (max-width: 900px){
+   .portfolio-table{ min-width: 700px; }
+}
+
+/* Read-more / clamped paragraph styles */
+.clamped{
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* show 3 lines */
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   max-height: calc(1.2em * 3);
+}
+.clamped.expanded{
+   -webkit-line-clamp: unset;
+   max-height: none;
+   overflow: visible;
+}
+.read-more{
+   color: violet;
+   cursor: pointer;
+   text-decoration: none;
+   margin-left: 8px;
+   font-weight: 600;
+}
+
+
+
