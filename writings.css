@@ -1,0 +1,93 @@
+/* WRITINGS PAGE STYLES */
+.writing-page {
+  font-family: Georgia, serif;
+  background-color: rgb(255, 0, 255);
+  color:black;
+}
+
+/* Container */
+.writing-page .contain {
+  width:60%;
+  max-width:700px;
+  margin:0 auto;
+  padding:50px 0;
+}
+
+/* Heading */
+.writing-page h1 {
+  text-align:center;
+  font-size:2.8rem;
+  margin-bottom:50px;
+}
+
+/* Story Previews */
+.writing-page .story-preview {
+  margin:50px 0;
+  cursor:pointer;
+  transition: transform 0.2s;
+}
+
+.writing-page .story-preview:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(191, 0, 255);
+  transform: scale(1.02);
+}
+
+.writing-page .story-title {
+  font-weight:bold;
+  font-size:1.8rem;
+  margin-bottom:10px;
+}
+
+.writing-page .story-text {
+  font-size:1.2rem;
+  line-height:1.8;
+}
+
+.writing-page .click-hint {
+  font-size:0.9rem;
+  color:gray;
+  margin-top:5px;
+}
+
+/* Full Story Page */
+.writing-page .full-story {
+  display:none;
+  text-align:center;
+  opacity:0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.writing-page #story-title {
+  font-weight:bold;
+  font-size:2rem;
+  margin-bottom:30px;
+}
+
+.writing-page #story-text {
+  font-size:1.2rem;
+  line-height:1.8;
+  white-space: pre-wrap;
+  text-align:left;
+}
+
+.writing-page .back {
+  margin-top:50px;
+  cursor:pointer;
+  font-size:1rem;
+  color:gray;
+}
+
+.writing-page .back:hover {
+  text-decoration:underline;
+}
+
+/* Fade-in animation for previews on load */
+.writing-page .fade {
+  opacity:0;
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity:1; }
+}

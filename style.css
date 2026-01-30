@@ -6,7 +6,7 @@ body {
 }
 header{
      height: 50%;
-    background-image: url("sparkle effect.gif");
+    background-image: url("sparkles.gif");
    
     font-size: large;
     text-align: center; 
@@ -382,6 +382,10 @@ cursor: pointer;
    margin-left: 8px;
    font-weight: 600;
 }
+
+
+
+
 
 
 
